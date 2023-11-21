@@ -24,7 +24,7 @@ const restaurantSlice = createSlice({
     },
     extraReducers:(builder)=>{
         builder.addCase(fetchRestaurants.pending,(state)=>{
-            state.loading =false
+            state.loading =true
         })
 
         builder.addCase(fetchRestaurants.fulfilled,(state,action)=>{

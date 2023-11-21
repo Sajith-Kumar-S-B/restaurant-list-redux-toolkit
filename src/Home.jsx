@@ -15,7 +15,7 @@ function Home() {
   return (
     <>
     <div className='d-flex justify-content-center align-items-center mt-5 w-100'>
-      {loading && <div><Spinner animation="grow" variant="light" /><span className='text-white ms-2'>Loading...</span></div>}
+      {loading && <><Spinner animation="border" variant="info" /><span className='text-white ms-2'>Loading...</span></>}
     </div>
     <div className='d-flex justify-content-center align-items-center mt-5 w-100'>
       {!loading && error? <div><span className='fw-bolder text-danger'>{error}</span></div>:null}
